@@ -228,8 +228,8 @@ h2 {
 }
 
 .colourcircle {
-  height: 10px;
-  width: 10px;
+  height: 15px;
+  width: 15px;
   border-radius: 50%;
 }
 
@@ -247,4 +247,5 @@ h2 {
 .textcontaint {
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
+  margin: 20px 8px;
 }

@@ -142,7 +142,7 @@ body {
   width: 100%;
   height: 300px;
   border: 1px;
-  background-image: url(../image/back.jpg);
+  background-image: url(./image/back.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 90%;
@@ -154,6 +154,7 @@ body {
   display: inline-block;
   color: black;
   font-size: 32px;
+  cursor: pointer;
 }
 
 .navigation li:hover {
@@ -188,11 +189,12 @@ p {
   width: 30%;
   height: 100%;
   display: inline-block;
+  margin-left: 50px;
 }
 
 #para4 {
   clear: left;
-  font-size: 14px;
+  font-size: 16px;
   color: black;
   text-align: center;
   width: 80%;
@@ -213,7 +215,7 @@ p {
 
 #para5 {
   clear: left;
-  font-size: 14px;
+  font-size: 16px;
   color: black;
   text-align: center;
   width: 80%;
@@ -223,18 +225,21 @@ p {
 
 #coloum2 audio {
   padding: 75px 0px 0px 45px;
-  width: 200px;
+  margin-left: 20px;
+
+  width: 300px;
 }
 
 #coloum3 {
   width: 30%;
   height: 100%;
   display: inline-block;
+  margin-left: 20px;
 }
 
 #para6 {
   clear: left;
-  font-size: 14px;
+  font-size: 16px;
   color: black;
   text-align: center;
   width: 80%;
@@ -248,7 +253,7 @@ p {
 
 .col3 {
   width: 100%;
-  /* height:300px; */
+  height: 100%;
   border: 1px;
   background-color: green;
 }
@@ -268,13 +273,13 @@ h2 {
   width: 90%;
   padding-left: 30px;
   padding-bottom: 30px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .para1 {
   box-shadow: 0px 0px 0px 20px white;
-  /* position:absolute; */
-  margin-bottom: 40px;
-  margin-left: 200px;
+  margin: 20px 0;
 }
 
 .col4 {
@@ -297,7 +302,7 @@ h2 {
 
 input {
   display: flex;
-  justify-content: center;
+  align-content: center;
   margin: 0 auto;
 }
 
@@ -307,16 +312,21 @@ textarea {
   width: 90%;
   margin-top: 20px;
 }
-
+.sub-col {
+  max-width: 90%;
+}
 .sub-col #name {
-  width: 45%;
+  width: 46%;
   margin-top: 10px;
   display: inline;
-  margin-left: 50px;
+  /* margin-left: 50px; */
+}
+.area {
+  margin-left: 60px;
 }
 
 .sub-col #email {
-  width: 44%;
+  width: 47.5%;
   display: inline;
 }
 
@@ -331,6 +341,7 @@ textarea {
   color: white;
   background: lightgreen;
   margin-top: 10px;
+  text-align: center;
 }
 
 h3 {
@@ -356,3 +367,6 @@ h3 {
 /* form input[type=text]{
   width: 100%  !important;
 } */
+form {
+  margin: 0 auto !important;
+}

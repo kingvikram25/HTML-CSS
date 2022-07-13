@@ -128,7 +128,7 @@ table {
 }
 
 body {
-  background-image: url(../image/dwyl.jpg);
+  background-image: url(./image/dwyl.jpg);
   background-size: 74%;
   background-position: top;
   background-repeat: no-repeat;
@@ -180,7 +180,7 @@ h1 {
   margin: 30px auto;
   color: white;
   text-align: center;
-  background-image: url(../image/cat.jpg);
+  background-image: url(./image/cat.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
