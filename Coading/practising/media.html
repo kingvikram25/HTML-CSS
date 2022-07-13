@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adding media, building form, organizing data with tables</title>
+  <link rel="stylesheet" href="../assets/practining/media.css">
+
+
+</head>
+<body>
+  
+  <!-- <audio controls> 
+    <source src="jazz.ogg" type="audio/ogg">
+    <source src="jazz.mp3" type="audio/mpeg"> 
+    <source src="jazz.wav" type="audio/wav">  
+  
+  please <a href="jazz.ogg"download>download</a> the audio file.
+  
+  </audio>-->
+
+  <!-- <video src="earth.ogv" controls></video>
+  <video src="earth.ogv" controls poster="earth-video-screenshot.jpg"></video> -->
+  <!-- <video controls> 
+    <source src="earth.ogv" type="video/ogg">
+    <source src="earth.mp4" type="video/mp4">
+    Please <a href="earth.mp4" download>download</a> the video.
+  </video>-->
+
+<!-- <figure><img src="organ-utan.jpg" alt=""></figure> -->
+
+<!-- <form action="processingscript.php" method="post" ></form> -->
+
+<!-- <textarea name="comment" cols="50" rows="5"></textarea> -->
+
+
+<!-- <input type="tel" name="phone-number"> -->
+
+<label> <input type="radio" name="day" value="friday">Friday </label>
+<input type="radio" name="day" value="saturday" checked>Saturday
+<input type="radio" name="day" value="sunday"> Sunday <!--if we want we use level tag also -->
+
+<br><br>
+
+<input type="checkbox" name="day" value="friday">Friday
+<input type="checkbox" name="day" value="saturday">Saturday
+<input type="checkbox" name="day" value="sunday">Sunday
+
+<!-- we can say that list item marker in checkbox element property like squre shape comaparing then radio property like circle shape its purely my theory may be correct or incorrect. -->
+
+<br><br>
+
+<select name="day">
+  <option value="friday" selected>Friday</option>
+  <option value="saturday">Saturday</option>
+  <option value="sunday">Sunday</option>
+  </select> <!--drop down list demo-->
+
+  <br><br>  
+
+<select name="day" multiple>
+<option value="friday" selected>Friday</option>
+<option value="saturday">Saturday</option>
+<option value="sunday">Sunday</option>
+</select> <!--multiple selected demo-->
+
+<br><br>
+
+<input type="submit" name="submit" value="SEND" > <br><br>
+
+<button name="submit">
+  <strong>Send Us</strong> a Message
+</button>
+
+<!-- <input type="file" name="data" id="some" accept="video/mp4"> -->
+
+
+<!-- <input type="hidden" name="tracking-code" value="abc-123" > hidden input demo  -->
+
+<br><br>
+
+<input type="file" name="input"> <br><br>
+
+<label for="username">Username</label> <!--Labels may include a for attribute. The value of the for attribute should be the same as the value of the id attribute on the form control the label corresponds to. Matching up the (for and id) attribute values ties the two elements together, allowing users to click on the <label> element to bring focus to the proper form control. -->
+<input type="username" name="username" id="username"> <br><br>
+
+<fieldset>
+<label > Username 
+<input type="text" name="username"> </label>
+
+<label > Password 
+<input type="text" name="password"> </label> <!--<fieldset> demo -->
+
+</fieldset>  <br><br> <!--Fieldsets group form controls and labels into organized sections. Much like a <section> or other structural element, the <fieldset> is a block-level element that wraps related elements, specifically within a <form> element, for better organization. Fieldsets, by default, also include a border outline, which can be modified using CSS.-->
+
+<!-- <legend> demo-- -->
+
+  <fieldset>
+    <legend>Login</legend>
+    <label > Username 
+    <input type="text" name="username"> </label>
+    
+    <label > Password 
+    <input type="text" name="password"> </label> 
+    
+    </fieldset>  <br><br>
+
+    <label>
+      Username 
+      <input type="text" name="username" disabled> <!-- we have no access for input-->
+    </label>
+<br><br>
+
+<label >
+Email Address
+<input type="email" name="email-address" placeholder="name@gmail.com">
+
+</label> <!--Placeholder demo--> <br><br>
+
+<!--required attribute demo...-->
+
+<label >Email Address
+<input type="email" name="email-address" required> 
+<input type="submit">
+
+</label> <br><br>
+
+
+<form>
+  <label>Username:</label>
+  <input type="text" name="username" required>
+  <input type="submit">
+</form> 
+<!--if we click on submit button error Message show becoz of form  properties this message show correct while above example it will not happen...--> <br><br>
+
+
+<label > Select Image:
+
+<input type="file" name="img" accept="image/*">
+
+</label> <!--accept attribute--> <br><br>
+
+
+<!-- formnovalidate demo -->
+
+<label> Enter Your Email:
+
+<input type="email" name="email-address">
+<input type="submit">
+<input type="submit" formnovalidate="formnovalidate" value="Submit without Validation">
+
+</label> <br><br>
+
+<!-- maxlength attribute demo -->
+
+<label>Username
+<input type="text" name="username" maxlength="10">
+<input type="submit">
+</label>  <br><br>
+
+<!--readonly attribte demo 1. input 2. textarea-->
+
+<label > Username
+<input type="text" name="username" value="sikarwarvikram88" readonly>
+<input type="submit">
+
+</label> <br><br>
+
+<textarea  cols="10" rows="5" readonly></textarea> <br><br>
+
+
+<!-- autocomplete attribute demo -->
+<form autocomplete="on">
+<label>First Name:</label>
+<input type="text" name="fname"> <br><br>
+
+<label>Last Name:</label>
+<input type="text" name="lname"> <br><br>
+
+<label>Email ID:</label>
+<input type="email" name="email" autocomplete="off"><br><br>
+<input type="submit">
+</form> <br><br>
+<!-- Fill in and submit the form, then reload the page to see how autocomplete works.
+
+Notice that autocomplete is "on" for the form, but "off" for the e-mail field! -->
+
+<!-- formtarget attribute demo -->
+
+<form >
+<label> Username:</label>
+<input type="text" name="username"><br>
+<input type="submit" value="Submit as normal"><br>
+<input type="submit" formtarget="_blank" value="Submit a new window/tab">
+</form> <br><br>  
+
+
+<!-- min attribute & max attribute demo -->
+
+
+<label for="datemin">Enter a date after 2000-01-01</label>
+<input type="date" id="datemin" name="datemin" min="2000-01-01"><br>
+<label for="datemax">Enter a date before 2005-01-01</label>
+<input type="date" id="datemax" name="datemax" max="2005-01-01"><br>
+<input type="submit"> <br> <br>
+
+
+<!-- autofocus attribute -->
+
+<label for="username">Username :-</label>
+<input type="text" id="username" name="username" autofocus>
+<!-- here you can see that icon inside blinking regularly thats property of autofocus --> <br><br>
+
+
+<!-- pattern attribute demo -->
+
+<p>A form with a password field that must contain 8 or more characters:-</p>
+<form>
+<label> Password:</label>
+<input type="text" name="password" pattern=".{8}"> <br>
+<input type="submit">
+</form> <br><br>
+
+
+
+<table>
+  <tr class="pink">
+    <th scope="col">Item</th>
+    <th scope="col">Availability</th>
+    <th scope="col">Qty</th>
+    <th scope="col">Price</th>
+  </tr>
+  <tr>
+    <td>Don&#8217;t Make Me Think by Steve Krug</td>
+    <td>In Stock</td>
+    <td>1</td>
+    <td>$30.02</td>
+  </tr>
+  <tr>
+    <td>A Project Guide to UX Design by Russ Unger &#38; Carolyn Chandler</td>
+    <td>In Stock</td>
+    <td>2</td>
+    <td>$52.94 ($26.47 &#215; 2)</td>
+  </tr>
+  <tr>
+    <td>Introducing HTML5 by Bruce Lawson &#38; Remy Sharp</td>
+    <td>Out of Stock</td>
+    <td>1</td>
+    <td>$22.23</td>
+  </tr>
+  <tr>
+    <td>Bulletproof Web Design by Dan Cederholm</td>
+    <td>In Stock</td>
+    <td>1</td>
+    <td>$30.17</td>
+  </tr>
+</table> <br><br>
+
+<!-- Table head, body foot demo -->
+
+<table>
+  <caption> Design and Development </caption>
+
+<thead>
+<tr>
+<th scope="col">Item </th>
+<th scope="col">Availability </th>
+<th scope="col">Qty </th>
+<th scope="col">Price </th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Don't think  my Table</td>
+<td>In stock</td>
+<td>1</td>
+<td>30$</td>
+</tr>
+</tbody>
+
+<tfoot>
+<tr>
+<td>Subtotal</td>
+<td></td>
+<td></td>
+<td>60$</td>
+</tr>
+
+<tr>
+<td>Tax</td>
+<td></td>
+<td></td>
+<td>13.54$</td>
+</tr>
+
+<tr>
+<td>Total</td>
+<td></td>
+<td></td>
+<td>53.25$</td>
+</tr>
+
+</tfoot>
+</table>
+
+</tbody> <br><br>
+
+<!-- Combining Multiple Cells -->
+
+<table>
+  <caption>Design and Front-End Development Books</caption>
+  <thead>
+    <tr>
+      <th scope="col" colspan="1">Item</th>
+      <th scope="col">Availability</th>
+      <th scope="col">Qty</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Don&#8217;t Make Me Think by Steve Krug</td>
+      <td>In Stock</td>
+      <td>1</td>
+      <td>$30.02</td>
+    </tr>
+    ...
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3">Subtotal</td>
+      <td>$135.36</td>
+    </tr>
+    <tr>
+      <td colspan="3">Tax</td>
+      <td>$13.54</td>
+    </tr>
+    <tr>
+      <td colspan="3">Total</td>
+      <td>$148.90</td>
+    </tr>
+  </tfoot>
+</table>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

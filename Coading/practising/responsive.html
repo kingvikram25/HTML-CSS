@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0"
+    />
+    <title>responsive</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/practining/responsive.css"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <div class="section menu"></div>
+      <div class="section header">
+        <!-- <div class="photo">
+        <img src="../image/photo-small.jpg" srcset="../image/photo-big.jpg 2000w, ../image/photo-small.jpg 1000w" sizes="(min-width:960px) 960px, 100vw ">
+      </div> screen width optimization using srcset-->
+
+        <div class="photo">
+          <picture>
+            <source media="(min-width:401px)" srcset="../image/photo-big.jpg" />
+            <source
+              media="(max-width:400px)"
+              srcset="../image/photo-tall.jpg"
+            />
+            <img src="../image/photo-big.jpg" />
+          </picture>
+        </div>
+      </div>
+      <div class="section content">
+        <!-- <img class="illustration" src="../image/illustration.svg" style="max-width:500px;" > this example of svg img  -->
+
+        <!-- <img class="illustration" src="../image/illustration-big.png" style="max-width:500px;" > -->
+
+        <img
+          class="illustration"
+          src="../image/illustration-small.png"
+          srcset="
+            ../image/illustration-small.png 1x,
+            ../image/illustration-big.png   2x
+          "
+          style="max-width: 500px"
+        />
+        <!--try to understand through modi -->
+      </div>
+      <div class="section sign-up">
+        <h1>Sign UP</h1>
+      </div>
+      <div class="section feature-1">
+        <h1>Feature</h1>
+      </div>
+      <div class="section feature-2">
+        <h1>Feature</h1>
+      </div>
+      <div class="section feature-3">
+        <h1>Feature</h1>
+      </div>
+    </div>
+  </body>
+</html>

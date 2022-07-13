@@ -1,0 +1,97 @@
+.ok {
+  margin-bottom: 40px;
+}
+
+.blg {
+  max-width: 93%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 10px auto;
+  border: 1px solid rgba(128, 128, 128, 0.514);
+  border-radius: 5px;
+}
+
+.blg-price-cta {
+  display: flex;
+  margin: 20px 0;
+}
+
+.blg-price-cta div {
+  width: 50%;
+}
+
+.btc {
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.btc .para2 {
+  line-height: 25px;
+  padding: 10px 0;
+}
+
+.dog {
+  font-size: 19px;
+  text-transform: capitalize;
+  font-weight: 550;
+  color: #000;
+}
+
+.amt {
+  font-size: 20px;
+  color: rgba(128, 128, 128, 0.719);
+}
+
+.btn-view-more a {
+  color: red;
+  font-weight: 600;
+  padding: 10px 14px;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 0 15px gray;
+}
+
+.blg-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+/* tablet display media query */
+@media screen and (min-width: 850px) and (max-width: 1100px) {
+  .blg-cards {
+    max-width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .blg {
+    max-width: 46%;
+    width: 100%;
+    margin: 5px 10px;
+  }
+}
+
+/* tablet display media query */
+@media screen and (min-width: 1101px) {
+  .blg-cards {
+    max-width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .blg {
+    max-width: 28.5%;
+    width: 100%;
+    margin: 10px 15px;
+  }
+
+  .soldier {
+    margin-top: 5em;
+  }
+}

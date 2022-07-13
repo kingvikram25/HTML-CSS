@@ -1,0 +1,204 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container
+{ width: 100px;
+  height: 100px;
+  border: 5px solid black;
+  margin:auto;
+  margin-top: 50px;
+  display:block;
+  text-align: center;
+  box-shadow: 0px 0px 0px 30px orange  ;}
+  /* if we put inset property like orange inset then box inside shadow is orange show */
+  /* Using negative length values for the horizontal and vertical offsets allows us to move shadows toward the left and the top */
+
+.para{text-transform:uppercase;letter-spacing: 4px;word-spacing: 8px;font-family:'smooch', cursive;padding-top: 100px;}
+
+#para1 
+{font-size: 32px;
+font-weight: bolder;
+outline: auto;
+background-image: url(../image/download.jpg)/*always put backgroung color bcoz whenever image path not correct or aything error comes and your image not load you still show background color*/;
+padding-top: 150px; 
+padding-bottom: 150px;
+background-color: pink;
+color:aqua;
+background-size:100% 100%;
+background-clip: border-box;
+/*background-origin:content-box;*/
+background-blend-mode:multiply;
+background-repeat: no-repeat;
+/* background-size: cover; */
+text-align: center;
+background-position: top center ; /* To set a background-position value, we can use the top, right, bottom, left, and center keywords, pixels, percentages, or any length measurement*/ /*or we can use right bottom/100% 100%  (20px 50%)*/}
+
+#para2 {
+  text-indent:20em;/*space starting first lorem indent mean*/
+  font-size: 20px; 
+  font-weight: bold;
+  text-align: justify;
+  line-height: 1.5em;
+  margin-left: 10em;
+  margin-right: 10em;
+  cursor: pointer;
+  outline:auto;
+  background-image: linear-gradient(
+     90deg, 
+    rgb(200,100,100)75%,
+    rgb(200,200,200)50%
+    );/*0deg is equivalent to to top.
+  90deg is equivalent to to right.
+  180deg is equivalent to to bottom.
+  270deg is equivalent to to left.
+  360deg brings you back to to top again.*/
+
+ }
+
+ .para3{
+   font-size: x-large;
+   font-family: 'Courier New', Courier, monospace;
+   font-weight: bold;
+   outline:auto;
+   margin-top: 40px;
+   background-image: linear-gradient( /*not space in liner-gradient( between if you did space css not work,{While the linear gradient is perfect for a gradient moving from one direction to another,}*/
+     to bottom left , 
+     rgb(100,0,0),
+     rgb(250,0,0)50%,
+     rgb(80,0,0)75%,
+     rgb(150,10,10)
+     );
+
+   color: white;
+   text-indent: 80px;
+   text-transform: uppercase;
+   line-height: 2em;
+   margin-left: 3em;
+   margin-right: 3em;
+   letter-spacing: 5px;
+   word-spacing: 5px;
+}
+
+#contain{
+  width: 550px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 100px ;
+  border: 5px solid rgb(233, 15, 15);  
+  border-width: 10px;
+  border-radius: 25px; 
+  
+  background-image:-webkit-linear-gradient(
+  top left,
+  rgb(250,0,0)50%,
+  rgb(250,150,0),
+  rgb(50,0,0)75%,
+  rgb(100,50,110) 
+
+  );
+/*background-image:-webkit-linear-gradient(
+  top left,
+  red,
+  pink,
+  blue); we can use this css property also for reference*/
+}
+
+.box{
+  width: 80%;
+  height: 50%;
+  border: 10px solid black;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin:0 auto;
+
+  /*background-image: -webkit-radial-gradient(
+     50% 50% ,
+     circle,
+    red 50%,
+    yellow 25%
+  );*/
+
+/*background-image: radial-gradient(red,green,blue);*/
+
+/*background-image: linear-gradient(red,green,blue);*/
+
+/*background-image: radial-gradient(red 5%,green 50%,blue 75%) A radial gradient with differently spaced color stops:*/
+
+/*background-image: radial-gradient(circle,red,green,blue) A radial gradient with the shape of a circle: */
+
+background-image: radial-gradient(closest-side at 60% 50%,
+blue, red,yellow, black);/*Radial Gradients - Use of different size keywords closest-side/farthest-side/closest-corner/farthest-corner */
+}
+
+body{background: -webkit-radial-gradient(
+  50% 50%,
+  circle,
+  red,
+  aqua
+);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+ 
+

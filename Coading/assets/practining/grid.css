@@ -1,0 +1,273 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* .container{
+ display: grid;
+ grid-template-columns: repeat(4, 1fr) ;
+ grid-template-rows: 300px 300px;
+ border: 2px solid red;
+} */
+
+/* .container{
+  display: grid;
+  grid-template-columns:60% 1fr 2fr 2fr;
+  grid-template-rows: 300px ;
+  border: 2px solid red;
+ } */
+
+ /* .container{
+  display: grid;
+  grid-template-columns:repeat(3, 1fr) repeat(3, 2fr);
+  grid-template-rows: 300px ;
+  border: 2px solid red;
+ } */
+
+ /* .container{
+  display: grid;
+  grid-template-columns: 200px repeat(2, 1fr) ;
+  grid-template-rows: 150px 250px  ;
+  border: 2px solid red;
+ } */
+
+ /* .container{
+  display: grid;
+  grid-template-columns: auto auto auto auto ;
+  grid-template-rows: 10em 10em ;
+  border: 5px solid yellow;
+  grid-gap: 10px;
+  padding: 10px;
+  background-color: black;
+  margin-top: 15px;
+
+ }
+
+ .coloum{
+ border: 1px solid black;
+ border-radius: 10px;
+ background-color: aqua;
+ padding: 5px;
+
+}
+
+.item1{grid-column-start:3;} */
+
+/* all above css is example of grid-template-columns/row  */
+
+
+
+
+
+
+  
+
+/* .item1 {
+  grid-area: naman;
+}  */
+
+ /* .grid-container{
+  display: grid; */
+  /* grid-template-areas: "naman naman . . . "; */
+  /* grid-template-areas:
+  "naman naman none none none"
+  "naman naman . . .";
+  gap: 20px 15px;
+  background-color: aquamarine;
+  padding: 10px;
+  
+ }
+/* 
+.grid-container > div{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 34px; 
+
+  
+}
+/* exampe of grid-template-area */
+
+
+
+
+
+
+
+/* .column{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 30px 30px 30px 30px ;
+  grid-auto-flow: row;
+  background-color:black;
+  color: white;
+  font-size: 32px;
+  text-align: center; 
+  margin-top: 3em;
+}
+  .item1{
+    grid-column: 2/5;
+    grid-row: 1/ span 3 ;
+    background-color:blue;
+  } */
+  /* .item5{
+    grid-column: 5;
+    grid-row: 1/3;
+    background-color: blue;
+  }  */
+/* grid-auto-flow properties */
+
+
+
+
+
+
+
+/* .container{
+  display: grid;
+  background-color: black;
+  gap: 15px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows:repeat(5, 1fr); 
+
+}*/
+
+/* .container > div{
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 34px;} */
+
+  /* .poop{
+    background-color: brown; */
+    /* grid-column-start: 2;
+    grid-column-end: 5; (we can use shorthand property rather that) */
+    /* grid-column: 2/5; */
+    /* grid-column: span 2/5; */
+    /* grid-column: 1/ span 2;  meaning start from 1 and span 2 */
+    /* grid-column: 1/-1; (if we dont know how many tracks you have you use this proprty)  */
+    /* grid-column: 1/-2 */
+    /* grid-row: 1/4; */
+    /* grid-row: 1/span 2; */
+    /* grid-row: 1/-1; (we use this because of grid-temp-row */
+
+
+  /* } in this exercise we learn about span and shorthnad properties */
+
+
+
+
+
+
+
+
+  /* .container {
+    display: grid;
+    grid-gap: 20px;
+    background-color: yellow;
+    /* Make the grid 10 columns wide, every other taking up twice the free space */
+    /* grid-template-columns: repeat(5, 1fr 2fr); */
+    /* Make the grid have 10 explicit rows, 50px high each */
+    /* grid-template-rows: repeat(10, 50px); */
+  /* } */ 
+
+/* .container>div{
+  background-color: black;
+  color:white;
+  text-align: center;
+  font-size: 32px;
+} */
+
+  /* With Item 1, start at col 3 and go until 5 */
+/* 
+  .item1 {
+    grid-column: 3 / 5;
+  } */
+
+  /* With Item 2, start at col 5 and go until the end */
+/* 
+  .item2 {
+    grid-column: 5 / -1;
+  } */
+
+  /* Make Item 5 double span 2 cols and rows */
+
+  /* .item5 {
+    grid-column: span 2;
+    grid-row: span 2;
+  } */
+
+  /* Make Item 8 two rows high */
+
+  /* .item8 {
+    grid-row: span 2;
+  } */
+
+  /* Make Item 15 span the entire grid width */
+
+  /* .item15 {
+    grid-column: 1 / -1;
+  } */
+
+  /* Make item 18 span 4 widths, but end 9 */
+
+  /* .item18 {
+    grid-column: span 4 / 9;
+  } */
+
+  /* Make item 20 start at row 4 and go for 3 */
+
+  /* .item20 {
+    grid-row: 4 / span 3;
+  } */
+
+  /* spanning and placing cardio */
+
+
+
+ 
+

@@ -1,0 +1,47 @@
+/* border collapse property */
+
+/* table{border-collapse: collapse;} 
+th,td{border: 1px solid yellowgreen; padding: 10px 10px;text-align: justify;}*/
+
+/*table{
+border-collapse: separate;
+border-spacing: 4px 5px ;} 4 px horigental spacing, 5px vertcal spacing
+
+table,th,td{border: 2px solid red;}
+
+th.td{padding: 10px 10px;}*/
+
+/*{adding border to rows}*/
+
+/*table{border-collapse: collapse ;}
+
+th,td{border-bottom: 3px solid red;padding: 10px 15px;}
+
+tfoot tr:last-child td{border-bottom: 0;}*/
+
+table{border-collapse: separate;border-spacing: 0;}
+th,td{padding: 10px 15px;}
+thead{background: yellowgreen;color: red;}
+tbody tr:nth-child(even){background: pink;}
+td{border-bottom: 3px solid orange;border-right: 3px solid green;}
+td:first-child{border-left: 2px solid brown;}
+.pink{background: black;color: white;}
+tfoot{background-color:lightblue;}
+tfoot{text-align: right;}
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+ 
+
