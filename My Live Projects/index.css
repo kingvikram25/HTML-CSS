@@ -1,0 +1,36 @@
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(131 255 0 / 22%),
+    rgb(214 3 3)
+  );
+}
+
+.title {
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin: 12px 0;
+  font-weight: bolder;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.title:hover {
+  color: rgb(220, 247, 251);
+}
+
+.paraStyle {
+  font-size: 20px;
+  font-family: "monospace";
+  font-weight: bolder;
+  color: rgb(16, 16, 174);
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+.sortList-title {
+  padding: 10px;
+}
